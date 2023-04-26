@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.TestKnapsackProblem" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-15T05:17:20" hostname="LAPTOP-A6T5DS80" time="0.023">
+  <properties/>
+  <testcase name="testRepeatedElement()" classname="com.example.demo.TestKnapsackProblem" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
