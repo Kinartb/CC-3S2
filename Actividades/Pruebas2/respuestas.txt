@@ -1,0 +1,90 @@
+1. ¿Cuál de los siguientes casos de prueba es probable que sean valores límite
+ producidos por la prueba de caja de cristal?
+
+valores = [ ] (lista vacia)
+valores = [0, 0, 1, 0, 0, 0, 0]
+
+Esto debido a que la primera lista de valores toma una lista vacia, habria que
+erificar en el codigo que haya una condicional especial para este caso
+
+Para la segunda lista de valores, si bien estos se van a organizar, van a haber
+valores que se repiten como el 0, para la parte del codigo seria ideal que hubiera
+una parte de optimizacion para este caso.
+
+2.
+
+Haces la masa para la base, la horneas sola y ves lo crocante y sabrosa que queda. 
+Esto es LOAD
+
+Decides comprar una mezcla de especias prefabricada en una tienda especializada. 
+Haces una salsa con las especias y luego la pruebas. Esto es EXTRACT
+
+Pones salsa y aderezos en la base y las horneas, para ver si la base todavía se 
+cocina bien con las cosas húmedas encima. Esto es INDEX
+
+3. ¿Cuál de los siguientes define mejor las pruebas de regresión?
+
+Cuando una nueva prueba expone un error, debe ejecutarla en todas las versiones 
+anteriores del código hasta que encuentre la versión en la que se introdujo el error.
+
+4. ¿Cuáles de los siguientes son buenos momentos para volver a ejecutar todas tus pruebas JUnit?
+
+Antes de hacer git add/commit/push
+Al usar una herramienta de cobertura de código
+
+el primero porque gracias a la ejecucion de pruebas, puedes estar altamente seguro de que estas realizando una modificacion de archivo sin errores existentes.
+La cobertura de codigo te permite ver que porcentaje de codigo esta siendo probrado
+por las pruebas, entonces esta herramienta ayudar a verificar que es lo que no se usa
+
+5. 
+
+Especificación de la función: La función debe tomar un número entero como entrada y devolver el cuadrado de ese número.
+
+Pruebas para la especificación:
+
+@Test
+public void TestNumeroPositivo() {
+    int result = cuadrado(4);
+    assertEquals(16, result);
+}
+
+@Test
+public void TestNumeroNegativo() {
+    int result = cuadrado(-1);
+    assertEquals(1, result);
+}
+
+@Test
+public void TestNumeroCero() {
+    int result = cuadrado(0);
+    assertEquals(0, result);
+}
+
+Implementación: 
+
+public int cuadrado(int num) {
+    return num * num;
+}
+
+6. ¿Cuáles de estas técnicas son útiles para elegir casos de prueba en el TFD antes de escribir cualquier código?
+
+Caja negra:Probrar funcionalidad sin tener encuento la implementacion
+Particionamiento: Tecnica que divide valores de entrada en grupos, dando un identificador.
+Límites: Seleccion de casos de prueba espeficos
+Caja de cristal: Cobertura amplia
+Cobertura: ya que se trabaja en torno a la especificacion
+
+7. ¿Cuál de estos pasos te ayudará a validar tu especificación antes de implementar el algoritmo de búsqueda binaria?
+
+Pruebas de caja negra, esto debido que se centran en la funcionalidad externa del trabajo sin que el mismo tengo aun alguna implementacion.
+
+8.¿Cuál de estos pasos ayudará a validar tu conjunto de pruebas antes de implementar el algoritmo de búsqueda binaria?
+
+Ejecutar una herramienta de cobertura de código en una implementación simple
+
+9.
+
+- En un comentario al comienzo de Math.java  
+- Justo antes de un método de prueba JUnit
+- En un comentario al comienzo de Math.java
+- En un comentario justo antes de un método de prueba JUnit

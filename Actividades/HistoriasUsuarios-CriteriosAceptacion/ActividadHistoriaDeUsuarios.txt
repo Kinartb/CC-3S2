@@ -1,0 +1,100 @@
+1 . ¿Cuáles de las siguientes no son buenas historias? ¿Por qué?
+
++Todos los gráficos y tablas se realizan utilizando una biblioteca de terceros.
+-A los usuarios no les interesa como se implementa el codigo del proyecto
+
++El software estará escrito en Java. (si condicional)
+-Depende de su uso, si se trata de aplicaciones para desarrolladores java
+ entonces si es una buena historia de usuario.
+
++El sistema utilizará Log4J para registrar todos los mensajes de error en un archivo.
+-Es irrelevante el sistema a utilizar (Log4J), esto no le importa al usuario.
+
+2 . ¿Cuáles de las siguientes no son buenas historias? ¿Por qué?
+
+¡Felicidades! todas las proposiciones son buenas historias.
+
+3. ¿Cuáles son cuatro buenas razones para usar historias de usuarios para expresar requisitos?
+
+-Las historias de usuarios se centran en las necesidades de los usuarios finales, por lo que asi conoceremos
+que es lo que se debe satisfacer.
+-Los requerimientos pueden ser detallados, por lo que se puede realizar un mejor entendimiento
+para el desarrollo del proyecto.
+-Las historias de usuarios son flexibles ya que se pueden modificar segun los requisitos que van apareciendo
+a lo largo del proyecto.
+-Las historias de usuario a su vez permiten la colaboracion del equipo ya que estos se deben realizar de manera
+conjunta por parte del equipo de trabajo.
+
+4 . ¿Cuáles pueden ser dos inconvenientes de usar historias de usuario?
+
++En proyectos grandes se pueden ver los incovenientes ya que revisar cantidades 
+ enormes de historias de usuario no es fiable en tiempo.
+
++Se necesita tener mucha practica de modo que solo personal calificado pueda implementar
+ de manera correcta las historias de usuario.
+
+5 . ¿Cómo debes manejar un requisito para que un sistema escale y lo usen 1000 usuarios 
+simultáneos?
+
++Se puede realizar pruebas de modo que se realiza 10 ejecuciones para 100 usuarios ya que estos
+al realizarlos de manera conjunta pueden generar demoras.
+
+6 . Proporciona algunos ejemplos de sistemas que podrían beneficiarse de una consideración más directa de la interfaz de 
+usuario de lo que normalmente se da en un proyecto ágil.
+
+-correos electronicos
+-datos estadisticos de rendimiento
+
+7 .
+
+Criterio de Aceptación 1:
+Dado un usuario determinado,
+Cuando realice una solicitud al punto final de la API para obtener el descuento disponible,
+Entonces la API debe devolver el descuento correspondiente para ese usuario.
+
+Criterio de Aceptación 2:
+Dado un usuario determiando,
+Cuando el valor de descuento recibido se muestre,
+Entonces la interfaz de usuario debe mostrar el mensaje correspondiente al valor de descuento recibido
+y proporcionra información para el usuario.
+
+8.1 . 
+
+Debido a que se esta realizando el juego con numeros enteros y decimales (0.5) se podria crear
+un juego con cierto limite. Ahora para los valores de infinito y signo de interrogacion quedaria en potestad
+del usuario y el desarrollador en ponerse de acuerdo que valores van a representar ya sea una victoria, cartas
+especiales, etc.
+
+Criterio de Aceptación 1
+Dado un juego de poker con infinito 
+Cuando se desea utilizar dicha carta,
+Entonces se gana automaticamente el juego.
+
+Criterio de Aceptación 2
+Dado un juego de poker con signo de interrogacion
+Cuando se desea utilizar dicha carta,
+Entonces pierde automaticamente el juego el jugador de turno.
+
+8.2
+
+Criterio de Aceptación 
+Dado como jugador
+Cuando se desea jugar un juego,
+Entonces se generara un tablero vacio de 3*3.
+
+Como para esto se utilizara una tabla referencial solo en consola sin utilizar entidades graficas gui e
+introducciento valores de solo numeros acorde a la posicion de una matriz.
+entonces las horas de esfuerzo estimada es 1 hora.
+
+9 .
+
+Puede que el proceso de describir una caracterisitica sea mayor de tallada pero sin embargo, puede estar
+presto a confusiones por la sobrecarga de texto.
+
+10 .
+
+En un sistema de software ya que una tarjeta de notas no podria verificarse bien el tamaño de letre o sea entendible
+debido a la tipografia si es que el trabajo se realiza con un compañero, ademas las tarjetas de notas pueden ser 
+dificiles de buscar.
+
+ 
