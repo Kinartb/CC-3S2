@@ -132,4 +132,8 @@ public class TestPrueba1 {
 }
 ```
 
+Se tiene el 100% de pruebas cubiertas en la siguiente imagen
+
+![Test de Prueba 1](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1.png)
+
 
