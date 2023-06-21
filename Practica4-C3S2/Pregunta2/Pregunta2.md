@@ -98,8 +98,8 @@ public class WordSelectionTest {
 
 El cual nos da una respuesta en verde para la prueba realizada
 
-!(Test)[https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba2test1.png]
+![Test](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba2test1.png)
 
 Con un coverage de casi el 33% 
 
-!(Coverage)[https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba2coverage1.png]
+![Coverage](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba2coverage1.png)
