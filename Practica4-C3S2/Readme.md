@@ -1,3 +1,9 @@
+Prueba 1 (8 puntos)
+
+Pregunta 1 (2 puntos)
+
+Escribe una implementacion del problema dado sin tenen en cuenta los requisitos. Queremos lograr, digamos, el 100% de cobertura de ramas.
+
 ```
 public class Main {
     public static void main(String[] args) {
