@@ -136,4 +136,24 @@ Se tiene el 100% de pruebas cubiertas en la siguiente imagen
 
 ![Test de Prueba 1](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1.png)
 
+Pregunta 4 (3 puntos)
+
+Al agregar dicha pruebas donde se experimenta con el último clump en el último elemento del arreglo o con un conjunto que tiene un clump que comienza en la primera posición.
+
+```
+ @Test
+    public void UltimoClumpEnElUltimoElementoDelArreglo(){
+        int[] testnum={0,1,2,1,3,2,2};
+        assertEquals(1,Prueba1.countClumps(testnum));
+    }
+    @Test
+    public void ClumpQueComienzaEnPrimeraPosicion(){
+        int[] testnum={1,1,2,3,2,4,2,5};
+        assertEquals(1,Prueba1.countClumps(testnum));
+    }
+```
+Se obtiene un error de prueba, pero nos indica un 100% de cobertura. Es decir que la prueba de cobertura nos indica que estamos probando todo el conjunto de pruebas pero no nos indica si esta es una prueba erronea o verdadera. 
+
+![Test de Prueba 1](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1.png)
+Nuestro codigo puede estar cubierto al 100% pero eso no quiere decir que la implementacion de nuestro programa este del todo correcto.
 
