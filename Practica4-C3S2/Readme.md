@@ -152,8 +152,60 @@ Al agregar dicha pruebas donde se experimenta con el último clump en el último
         assertEquals(1,Prueba1.countClumps(testnum));
     }
 ```
+Ejecutamos las pruebas
+
+![](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1test.png)
+
+Para el de cobertura
+
+![](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1coverage.png)
+
 Se obtiene un error de prueba, pero nos indica un 100% de cobertura. Es decir que la prueba de cobertura nos indica que estamos probando todo el conjunto de pruebas pero no nos indica si esta es una prueba erronea o verdadera. 
 
-![Test de Prueba 1](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1.png)
-Nuestro codigo puede estar cubierto al 100% pero eso no quiere decir que la implementacion de nuestro programa este del todo correcto.
+Esto se soluciona con una implementacion en nuestro codigo de ejecucion
+```
+package Ejecucion;
+
+public class Prueba1 {
+    public static void main(String[] args) {
+        int retorno;
+        int[] nums = {0,0,0, 1, 1,3,3, 2, 2, 2,2};
+        retorno=countClumps(nums);
+        System.out.println(retorno);
+    }
+    public static int countClumps(int[] nums){
+        //T1,T2
+        if (nums==null || nums.length==0 || nums.length==1){
+            return 0;
+        }
+        int acumulador=0;
+        boolean identificador=false;
+        boolean cambio=false;
+        for( int i=0; i<nums.length-1; i++){
+            if (nums[i]==nums[i+1]){
+                identificador=true;
+            }else if(nums[i]!=nums[i+1]){
+                cambio=true;
+            }
+            if (identificador == true && cambio==true && nums[i]==nums[i+1]){
+                identificador=false;
+                cambio=false;
+                acumulador++;
+            }
+        }
+        if(nums[0]==nums[1]){
+            return acumulador+1;
+        }
+        return acumulador;
+    }
+}
+```
+Ejecutamos las pruebas nuevamente
+
+![](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1test2.png)
+
+Tambien visualizamos la cobertura
+
+![](https://github.com/Kinartb/CC-3S2/blob/main/Practica4-C3S2/imagenes/prueba1coverage2.png)
+Nuestro codigo puede estar cubierto al 100% pero eso no quiere decir que la implementacion de nuestro programa este del todo correcto por lo que al realizar un programa es necesario un mayor analisis.
 
